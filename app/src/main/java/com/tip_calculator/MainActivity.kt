@@ -68,7 +68,7 @@ class MainActivity : AppCompatActivity() {
                 //check to see if view is empty and update to default 1
                 view, b -> if(etSplit.text.toString().isEmpty()){
                     etSplit.setText("$INITIAL_SPLIT_NUM")
-                    Toast.makeText(applicationContext,"Default split is 1", Toast.LENGTH_LONG).show()
+                    Toast.makeText(applicationContext,"Default number of people to split bill is 1", Toast.LENGTH_LONG).show()
                 }
         }
     }
@@ -102,8 +102,8 @@ class MainActivity : AppCompatActivity() {
             else -> tipDescription = getString(R.string.amazing)
         }
         //update the tip label description
+        etSplit.clearFocus() //force focus away from the split
         seekBarLabel.text = tipDescription
-        seekBarLabel.requestFocus() //shift focus from anything else to the seekbar
         val color = ArgbEvaluator().evaluate(progress.toFloat()/seekBarTip.max,
             ContextCompat.getColor(this, R.color.colorWorstTip),
             ContextCompat.getColor(this, R.color.colorBestTip)

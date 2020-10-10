@@ -17,9 +17,9 @@ The following **required** functionality is completed:
 
 The following **extensions** are implemented:
 
-[Done] Replaced the text describing the tip (“poor”, “good”, etc) with emojis.
-[Done] Centered text inside editables
-[Done] Added the ability to split the bill across any number of people.
+* Replaced the text describing the tip (“poor”, “good”, etc) with emojis.
+* Centered text inside editables
+* Added the ability to split the bill across any number of people.
 
 ## Video Walkthrough
 
